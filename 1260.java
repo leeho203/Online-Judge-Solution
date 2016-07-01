@@ -32,11 +32,11 @@ public class Main {
 	}
 
 	static void DFS(int here) {
-	  // 해당 부분을 방문했다고 판단
+		// 해당 부분을 방문했다고 판단
 		System.out.print(here + " ");
 		visited[here] = true;
 		
-	  // 인접행렬에서 here을 기준으로 모든 정점에 대해 도달할 수 있으며 아직 방문하지 않은 정점이라면 해당 정점을 방문함
+		// 인접행렬에서 here을 기준으로 모든 정점에 대해 도달할 수 있으며 아직 방문하지 않은 정점이라면 해당 정점을 방문함
 		for (int there = 1; there < adj.length; there++) {
 			if (adj[here][there] && !visited[there]) {
 				DFS(there);
@@ -47,7 +47,7 @@ public class Main {
 	static void BFS(int start) {
 		ArrayList<Integer> order = new ArrayList<Integer>();
 	  
-	  // 해당 부분을 발견했다고 설정해줌
+		// 해당 부분을 발견했다고 설정해줌
 		discovered[start] = true;
 		
 		// 발견한 부분에 대해서는 큐로 들어온 순서대로 처리할 것임
@@ -56,7 +56,7 @@ public class Main {
 
 		while (!que.isEmpty()) {
 		
-		  // 발견한 부분을 출력해줌 -> 출력한 부분은 실제 방문한 것임
+			// 발견한 부분을 출력해줌 -> 출력한 부분은 실제 방문한 것임
 			int here = que.get(0);
 			System.out.print(here + " ");
 			
