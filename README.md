@@ -1,2 +1,2 @@
 # BOJ
-Backjoon Online Judge Algorithm
+Backjoon Online Judge algorithm solution for java
