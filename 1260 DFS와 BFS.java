@@ -32,7 +32,7 @@ public class Main {
 	}
 
 	static void DFS(int here) {
-		// 해당 부분을 방문했다고 판단
+		// 해당 정점을 방문했다고 판단
 		System.out.print(here + " ");
 		visited[here] = true;
 		
@@ -47,16 +47,16 @@ public class Main {
 	static void BFS(int start) {
 		ArrayList<Integer> order = new ArrayList<Integer>();
 	  
-		// 해당 부분을 발견했다고 설정해줌
+		// 해당 정점을 발견했다고 설정해줌
 		discovered[start] = true;
 		
-		// 발견한 부분에 대해서는 큐로 들어온 순서대로 처리할 것임
+		// 발견한 정점에 대해서는 큐로 들어온 순서대로 처리할 것임
 		ArrayList<Integer> que = new ArrayList<Integer>();
 		que.add(start);
 
 		while (!que.isEmpty()) {
 		
-			// 발견한 부분을 출력해줌 -> 출력한 부분은 실제 방문한 것임
+			// 발견한 정점을 출력해줌 -> 출력한 정점은 실제 방문한 것임
 			int here = que.get(0);
 			System.out.print(here + " ");
 			
