@@ -12,12 +12,12 @@ public class Main {
 		// 동적계획법을 사용해서 저장해줄 배열 선언
 		int[][] d = new int[n + 1][m + 1];
 
-    // n * m 크기의 데이터 입력
+    		// n * m 크기의 데이터 입력
 		for (int i = 1; i <= n; i++)
 			for (int j = 1; j <= m; j++)
 				a[i][j] = sc.nextInt();
     
-    // 오른쪽 또는 아래쪽으로 내려오면서 가장 큰 값을 d배열에 저장해줌
+		 // 오른쪽 또는 아래쪽으로 내려오면서 가장 큰 값을 d배열에 저장해줌
 		for (int i = 1; i <= n; i++) {
 			for (int j = 1; j <= m; j++) {
 				if (i == 1 && j == 1)
@@ -27,7 +27,7 @@ public class Main {
 			}
 		}
   
-    // n, m 지점에 내려왔을 때의 값이 max값임
+    		// n, m 지점에 내려왔을 때의 값이 max값임
 		System.out.println(d[n][m]);
 
 	}
