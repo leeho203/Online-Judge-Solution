@@ -28,7 +28,7 @@ public class Main {
 
 	}
 
-	// 해당 인덱스에서부터 시작해서 최소 몇 번만에 도착하는 지를 리턴하는 메서드
+	// 해당 인덱스에서부터 시작해서 최소 몇 번만에 도착하는 지를 리턴하는 완전탐색 알고리즘
 	static int jump(int n) {
 		int min = INF;
 		if (n >= a.length - 1)
