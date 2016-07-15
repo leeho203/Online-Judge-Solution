@@ -42,7 +42,7 @@ public class Main {
 			for (int j = 0; j <= c; j++)
 				paperCount[arr[i][j] + 1]++;
 
-		// 종이조각이 모두 똑같은 숫자로 구성되어 있다면 isAllEqual은 true값을 가지고 메서드 종료 
+		// 종이조각이 모두 똑같은 숫자로 구성되어 있다면 isAllEqual은 true값을 가짐 
 		for (int i = 0; i < paperCount.length; i++) {
 			if (paperCount[i] == arr.length * arr[0].length) {
 				isAllEqual = true;
