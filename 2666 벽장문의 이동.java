@@ -1,5 +1,5 @@
-/* https://www.acmicpc.net/problem/2666 */
-
+// 완전탐색, 동적계획법
+// https://www.acmicpc.net/problem/2666
 import java.util.*;
 
 public class Main {
