@@ -1,6 +1,6 @@
 /*
  * https://www.acmicpc.net/problem/5582
- * 동적계획법, 최장 공통 부분열(Longest Common Substring)
+ * 동적계획법, 최장 공통 부분 문자열(연속, Longest Common Substring)
  */
 import java.util.*;
 
