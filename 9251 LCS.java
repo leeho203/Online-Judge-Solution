@@ -1,3 +1,7 @@
+/*
+ * https://www.acmicpc.net/problem/9251
+ * 동적계획법, 최장 공통 부분 문자열(불연속, Longest Common Subsequence)
+ */
 import java.util.*;
 
 public class Main {
