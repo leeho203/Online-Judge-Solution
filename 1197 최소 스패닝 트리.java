@@ -42,7 +42,8 @@ public class Main {
 
 		if (rank[p1] >= rank[p2]) {
 			parent[p2] = p1;
-			rank[p1]++;
+			if(rank[p1] == rank[p2])
+				rank[p1]++;
 		} else
 			parent[p1] = p2;
 	}
