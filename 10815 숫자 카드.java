@@ -1,6 +1,6 @@
 /*
  * https://www.acmicpc.net/problem/10815
- * 이진 검색 트리
+ * 이분 검색
  */
 import java.util.*;
 import java.io.*;
